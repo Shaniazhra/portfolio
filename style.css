@@ -65,8 +65,8 @@ h1,h2,h3,h4{font-family:var(--serif);line-height:1.15}
 .contact a:hover{background:var(--pink);transform:translateY(-4px) rotate(-6deg)}
 .contact svg{width:22px;height:22px}
 .contact.center{justify-content:center;margin:14px 0}
-.btn{display:inline-block;background:var(--maroon);color:#fff;font-weight:700;font-size:.85rem;padding:12px 24px;border-radius:4px;transition:.3s;position:relative;overflow:hidden}
-.btn:hover{background:var(--pink-d);transform:translateY(-3px);box-shadow:0 10px 22px rgba(142,27,67,.25)}
+.btn{display:inline-block;color:var(--maroon);font-weight:700;font-size:.85rem;white-space:nowrap;border-bottom:2px solid var(--pink);padding-bottom:2px;transition:.25s}
+.btn:hover{color:var(--pink-d);letter-spacing:.02em}
 .btn.disabled{opacity:.45;pointer-events:none}
 .about-photo{position:relative;background:var(--pink);display:flex;align-items:flex-end;justify-content:center;border-radius:0 0 0 0;height:min(680px,90vw);overflow:hidden;align-self:center}
 .about-photo .ring{position:absolute;width:75%;aspect-ratio:1;border-radius:50%;border:2px solid #fff;background:#f7c4d4;top:20%;left:50%;transform:translateX(-50%);animation:pulse 5s ease-in-out infinite}
@@ -221,7 +221,10 @@ figcaption a{font-size:.75rem;color:var(--maroon);font-weight:700;border-bottom:
  .certs{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:640px){
- .hero h1{align-self:center;gap:0;flex-direction:column;align-items:center}
+ .hero h1{align-self:center;gap:0;flex-direction:row;align-items:center;font-size:clamp(2.6rem,14.5vw,5rem)}
+ .uni{flex-wrap:nowrap;gap:14px}
+ .uni img{width:56px;height:56px;flex-shrink:0}
+ .uni h3{font-size:1.1rem;margin-bottom:8px}
  .hero-title{flex-direction:column;min-height:0}
  .hero-photo{position:relative;left:auto;bottom:0;transform:none;height:340px;margin-top:-30px;animation:none}.hero-name{margin-top:20px}
  .hero-name{align-self:center;text-align:center;margin-top:20px}
