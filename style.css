@@ -54,7 +54,7 @@ h1,h2,h3,h4{font-family:var(--serif);line-height:1.15}
 .big{font-size:clamp(2.6rem,6vw,4.4rem);font-weight:800}
 .big em,.sub{color:var(--pink-d)}
 .big em{font-weight:700}
-.chip{display:inline-block;background:var(--maroon);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.04em;padding:6px 16px;border-radius:4px}
+.chip{display:inline-block;background:var(--blush);color:var(--maroon);border:1px solid #f4b6c9;font-weight:700;font-size:.8rem;letter-spacing:.02em;padding:4px 14px;border-radius:99px;cursor:default}
 .sub{font-style:italic;font-weight:700;color:var(--maroon);font-size:.95rem}
 .about-text>p{color:#3a2530;max-width:60ch}
 .contact{display:flex;gap:12px}
@@ -71,8 +71,8 @@ h1,h2,h3,h4{font-family:var(--serif);line-height:1.15}
 .about-photo img{position:relative;width:100%;height:100%;object-fit:cover;object-position:top}
 
 /* SECTIONS */
-.sec{padding-bottom:80px}
-.band{background:var(--pink);padding:88px clamp(20px,5vw,56px) 22px;margin-top:0}
+.sec{padding-bottom:64px;padding-top:0}
+.band{background:var(--pink);padding:22px clamp(20px,5vw,56px);margin-top:0}
 .band h2{color:#fff;font-size:clamp(1.7rem,3.6vw,2.4rem);max-width:1200px;margin:0 auto;font-weight:600}
 .wrap{max-width:1200px;margin:0 auto;padding:36px 24px 0}
 .role{font-style:italic;color:var(--maroon);font-weight:700;font-size:.95rem;margin:4px 0 10px}
@@ -83,7 +83,8 @@ figure img{width:100%;height:auto;object-fit:cover}
 .phone{border:0;background:none;box-shadow:none}
 .phone img{object-fit:contain;filter:drop-shadow(0 10px 16px rgba(0,0,0,.2))}
 .phone:hover{box-shadow:none}
-.tag{background:var(--maroon);color:#fff;font-size:.75rem;font-weight:700;padding:6px 18px;border-radius:3px;white-space:nowrap}
+.tag{color:var(--maroon);font-size:.85rem;font-weight:700;white-space:nowrap;border-bottom:2px solid var(--pink);padding-bottom:2px;transition:.25s}
+.tag:hover{color:var(--pink-d);letter-spacing:.02em}
 
 /* education */
 .uni{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
