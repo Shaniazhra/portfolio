@@ -111,10 +111,10 @@ figure img{width:100%;height:auto;object-fit:cover}
 .bar i:nth-child(3){background:#fbd5e1}
 .bar em{margin-left:10px;font-style:normal;font-size:.7rem;font-weight:700;color:var(--muted);background:#fff;border:1px solid #f4cbd9;border-radius:99px;padding:1px 14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .browser img{display:block;width:100%;height:auto}
-.st-main{grid-column:1/9;grid-row:1;align-self:start}
-.st-col{grid-column:8/13;grid-row:1/3;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start;margin-top:clamp(24px,6vw,80px);z-index:2}
+.st-main{grid-column:1/8;grid-row:1;align-self:start}
+.st-col{grid-column:8/13;grid-row:1;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-content:start}
 .st-col .wide{grid-column:1/-1}
-.st-phones{grid-column:1/8;grid-row:2;display:flex;gap:12px;align-items:flex-end;margin-top:clamp(-60px,-4vw,-16px);padding-left:4%;z-index:3}
+.st-phones{grid-column:1/-1;grid-row:2;display:flex;gap:clamp(16px,3vw,36px);align-items:flex-end;justify-content:center;margin-top:clamp(22px,3vw,36px)}
 .st-phones figure{width:clamp(105px,15vw,190px);flex:none;text-align:center}
 .st-phones figcaption{font-size:.72rem;font-weight:700;color:var(--maroon);padding-top:6px}
 .mini-h{font-size:1.15rem;color:var(--maroon);margin:8px 0 14px}
@@ -251,7 +251,6 @@ figcaption a{font-size:.75rem;color:var(--maroon);font-weight:700;border-bottom:
 }
 @media (max-width:760px){
  .stage{display:flex;flex-direction:column;gap:14px;padding:18px}
- .st-col{margin-top:0}
- .st-phones{margin-top:0;padding-left:0;justify-content:center}
+ .st-phones{margin-top:4px}
  .st-phones figure{width:clamp(95px,28vw,150px)}
 }
