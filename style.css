@@ -253,3 +253,10 @@ figcaption a{font-size:.75rem;color:var(--maroon);font-weight:700;border-bottom:
 @media (max-width:640px){
  .g-thumb{width:112px}
 }
+
+/* swipe hint (gallery thumbnails, mobile) */
+@media (max-width:640px){
+ .gallery::after{content:"Swipe to see more";display:block;text-align:center;font-size:.78rem;font-weight:700;color:var(--maroon);letter-spacing:.02em;margin-top:2px;animation:swipehint 1.8s ease-in-out infinite}
+}
+@keyframes swipehint{50%{transform:translateX(6px)}}
+@media (prefers-reduced-motion:reduce){.gallery::after{animation:none}}
